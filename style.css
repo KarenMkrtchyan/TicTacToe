@@ -61,3 +61,19 @@ button{
     padding: 10px 15px;
     border-radius: 10px;
 }
+
+/* POPUP STYLE */
+dialog[open] {
+    z-index:10; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+dialog button{
+    color:black;
+}
+dialog::backdrop{
+    background-color: rgba(0,0,0,.2);
+    filter: blur(1.5rem);
+}
